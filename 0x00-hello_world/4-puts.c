@@ -1,9 +1,10 @@
 #include <stdio.h>
 /**
 * main - My first C code using func puts
-* return: 0 is correct
+* Description: output the message
+* Return: 0 is correct
 */
-void main(void)
+int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
 	return (0);
