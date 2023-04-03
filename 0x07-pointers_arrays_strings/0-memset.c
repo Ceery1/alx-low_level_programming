@@ -2,8 +2,8 @@
 /**
  * _memset - function to call
  * @s: array
- * b: constant
- * n: bytes of the memory
+ * @b: constant
+ * @n: bytes of the memory
  */
 char *_memset(char *s, char b, unsigned int n)
 {
