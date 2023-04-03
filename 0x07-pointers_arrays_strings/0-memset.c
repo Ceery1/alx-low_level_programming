@@ -4,6 +4,7 @@
  * @s: array
  * @b: constant
  * @n: bytes of the memory
+ * Return: s
  */
 char *_memset(char *s, char b, unsigned int n)
 {
