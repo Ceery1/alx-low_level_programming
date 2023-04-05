@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _pow_recursion(int x, int y)
+ * _pow_recursion - function to call
  * @x: first parameter
  * @y: second paramater
  * Return: 0
