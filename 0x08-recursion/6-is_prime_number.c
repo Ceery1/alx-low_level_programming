@@ -13,6 +13,13 @@ int is_prime_number(int n)
 		return (0);
 	return (check_prime(n, (n / 2)));
 }
+/**
+ * check_prime - function to call
+ * @n: number to check if prime number or not
+ * @i: number - 1
+ * Return: 1 if prime 0 if not
+ */
+
 int check_prime(int n, int i)
 {
 	if (i == 1)
