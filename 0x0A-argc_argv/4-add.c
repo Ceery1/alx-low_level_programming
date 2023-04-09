@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 /**
 * main - entry point
 * @argc: number of arguments in argv
@@ -9,26 +10,30 @@
 int main(int argc, char *argv[])
 {
 	int i;
-	int add = 0;
-	unsigned char k;
+	unsigned int k, add = 0;
+	char *e;
 
-	if (argc < 1)
+	if (argc > 1)
+	{
+		for (i = 1; i < argc; i++)
+		{
+			e = argv[i];
+			for (k = 0; k < strlen(e); k++)
+			{
+				if (e[k] < 48 || e[k] > 57)
+				{
+					printf("Error\n");
+					return (1);
+				}
+			}
+			add += atoi(e);
+			e++;
+		}
+		printf("%d\n", add);
+	}
+	else
 	{
 		printf("0\n");
 	}
-	for (i = 1; i < argc; i++)
-	{
-		k = *argv[i];
-		if (k < 48 || k > 57)
-		{
-			printf("Error\n");
-			return (1);
-		}
-		else
-		{
-			add += atoi(argv[i]);
-		}
-	}
-	printf("%d\n", add);
 	return (0);
 }
