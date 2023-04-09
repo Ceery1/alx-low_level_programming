@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
 {
 	int i;
 	int add = 0;
-	char k;
+	unsigned char k;
 
 	if (argc < 1)
 	{
