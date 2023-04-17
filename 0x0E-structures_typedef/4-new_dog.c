@@ -32,7 +32,7 @@ char *_strdup(char *str)
      * @age: age of the dog
       * @owner: name of the owner of the dog
        *
-        * Return: pointer to new dog structure or NULL
+ * Return: pointer to new dog structure or NULL
 	 */
 dog_t *new_dog(char *name, float age, char *owner)
 {
